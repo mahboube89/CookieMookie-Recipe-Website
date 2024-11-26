@@ -1,0 +1,211 @@
+/*
+=====================
+    RESET CSS        
+=====================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+=====================
+    FONT-FACE        
+=====================
+*/
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400; /* Regular */
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("/assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+    font-weight: 400; /* Regular */
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("/assets/fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+}
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("/assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+}
+
+
+/*
+=====================
+    BASE STYLES       
+=====================
+*/
+
+:root {
+
+    /* Colors */
+    --primary-light: #f0f4e3; /* A light, soft shade for backgrounds or highlights */
+    --primary-dark: #1a1a1a; /* A dark shade for text or prominent elements */
+    --secondary-light: #f9f9f9; /* A very light shade for contrast or overlays */
+    --secondary-dark: #395733; /* A bold, earthy tone for strong accents */
+    --accent: #D3896E; /* A warm, inviting accent for highlights or interactions */
+    --neutral: #BBBDB4; /* A balanced, neutral shade for secondary purposes */
+
+    /* Typography */
+    --font-primary: "Plus Jakarta Sans", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {list-style: none;}
+
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+textarea {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {height: auto;}
+
+input,
+button,
+select,
+textarea {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+}
+
+button {cursor: pointer;}
+
+address {font-style: normal;}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: 1.6rem;
+    line-height: 1.85;
+    overflow: hidden;
+    height: 300vh;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+
+body.nav-active {overflow: hidden;}
+
+::-webkit-scrollbar {width: 5px;}
+
+::-webkit-scrollbar-track { background: transparent;}
+
+::-webkit-scrollbar-thumb { background-color: #bebbbb;}
+
+
+/*
+===================
+    COMPONENTS
+===================
+*/
+
+.container {padding-inline: 1rem;}
+
+.separator {
+    width: 8px;
+    height: 8px;
+    border: 1px solid ;
+}
+
