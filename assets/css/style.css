@@ -123,12 +123,14 @@ table {
 :root {
 
     /* Colors */
+    --primary-light: #BBBDB4; /* A light, soft shade for backgrounds or highlights */
     --primary-light: #f0f4e3; /* A light, soft shade for backgrounds or highlights */
     --primary-dark: #1a1a1a; /* A dark shade for text or prominent elements */
     --secondary-light: #f9f9f9; /* A very light shade for contrast or overlays */
     --secondary-dark: #395733; /* A bold, earthy tone for strong accents */
     --accent: #D3896E; /* A warm, inviting accent for highlights or interactions */
     --neutral: #BBBDB4; /* A balanced, neutral shade for secondary purposes */
+    --neutral: #99a392; /* A balanced, neutral shade for secondary purposes */
 
     --glass-lightness: 100%;
     --glass-alpha: 50%;
@@ -232,9 +234,17 @@ body.nav-active {overflow: hidden;}
     transform: rotate(45deg);
 }
 
+h2 {
+    font-family: var(--font-head);
+    font-weight: var(--font-weight-medium);
+}
+
 .label-1 { font-size: 1.4rem;}
 
-.label-2 { font-size: .8rem;}
+.label-2 {
+    font-size: .8rem;
+    color: var(--secondary-dark);
+}
 
 .text-center {text-align: center;}
 
@@ -662,7 +672,7 @@ body.nav-active {overflow: hidden;}
     bottom: 15px;
     right: 15px;
     z-index: 2;
-    background-color: var(--secondary-dark);
+    background-color: var(--accent);
     width: 110px;
     height: 110px;
     padding: 12px;
@@ -694,6 +704,101 @@ body.nav-active {overflow: hidden;}
     100% { transform: rotate(1turn); }
 }
   
+
+/*
+===================
+    MEAL OPTIONS
+===================
+*/
+
+.meal-options {
+    background-image: url("../images/img-pattern.svg");
+    background-repeat: repeat;
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(1.2);
+    padding: 3rem 0;
+}
+
+.meal-options-header {}
+
+.meal-options-subtitle {}
+
+.meal-options-title {
+    margin-bottom: 4rem;
+}
+
+.meal-option {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.meal-option-title {
+    margin-bottom: 2rem;
+}
+
+.meal-option--diet {}
+
+
+.meal-option-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 1rem;
+    width: 100%;
+    
+}
+
+.meal-item {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--neutral);
+    padding: 30px 20px 40px;
+    transition: background-color 300ms ease;
+    border-radius: 4px;
+}
+
+.meal-item:hover .meal-icon-wrapper {
+    transform: scale(-1) rotate(180deg);
+    transition: transform 500ms ease;
+}
+
+.meal-item:hover {
+    background-color: var(--accent);
+}
+
+.meal-icon-wrapper {
+    max-width: max-content;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.meal-icon {
+    width: 68px;
+    height: auto;
+
+}
+
+.meal-link{
+    font-size: 1.5rem;
+}
+
+.meal-text {}
+
+.meal-option--time {}
+
+.meal-option--type {}
+
+
+
+
 
 
 
@@ -728,6 +833,8 @@ body.nav-active {overflow: hidden;}
 
     .label-2 {font-size: 1rem;}
 
+    h2 { font-size:2rem ;}
+
     .section-subtitle::after {width: 100px;}
 
     .btn {font-size: 1.2rem;}
@@ -741,8 +848,6 @@ body.nav-active {overflow: hidden;}
     .content-wrapper {
         padding: 4rem;
         width: 72%;}
-
-    .hero-title { font-size:2rem ;}
 
     .hero-text {
         max-width: 33rem;
@@ -780,12 +885,14 @@ body.nav-active {overflow: hidden;}
 /* Responsive for larger than 992px screen */
 @media (min-width: 992px) {
 
+    .label-2 {font-size: 1.2rem;}
 }
 
 
 /* Responsive for larger than 1200px screen */
 @media (min-width: 1200px) {
 
+    .label-2 {font-size: 1.3rem;}
 
     /* Header */
     .nav-open-btn,
@@ -837,6 +944,18 @@ body.nav-active {overflow: hidden;}
         transform: scale(1);
     }
 
+    /* Meal Options */
+    .meal-options-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+
+    .meal-option {
+        flex: 1;
+    }
+
 
 }
 
@@ -845,6 +964,8 @@ body.nav-active {overflow: hidden;}
 
     /* Header */
     .navbar { margin-inline: auto;}
+
+    
 
 
 }
