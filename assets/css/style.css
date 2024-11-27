@@ -96,6 +96,24 @@ table {
 }
 
 
+@font-face {
+    font-family: "Behind The Nineties";
+    src: url("/assets/fonts/Behind-The-Nineties-Regular.ttf") format("truetype");
+    font-weight: 400; /* Regular */
+}
+
+@font-face {
+    font-family: "Behind The Nineties";
+    src: url("/assets/fonts/Behind-The-Nineties-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium */
+}
+
+@font-face {
+    font-family: "Behind The Nineties";
+    src: url("/assets/fonts/Behind-The-Nineties-Bold.ttf") format("truetype");
+    font-weight: 700; /* Bold */
+}
+
 /*
 =====================
     BASE STYLES       
@@ -115,6 +133,7 @@ table {
     /* Typography */
     --font-primary: "Plus Jakarta Sans", sans-serif;
     --font-secondary: "Montserrat", sans-serif;
+    --font-head: "Behind The Nineties", sans-serif;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -179,7 +198,7 @@ body {
     font-weight: var(--font-weight-regular);
     font-size: 1.6rem;
     line-height: 1.85;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 300vh;
     background-color: var(--primary-light);
     color: var(--primary-dark);
@@ -209,3 +228,279 @@ body.nav-active {overflow: hidden;}
     border: 1px solid ;
 }
 
+/*
+===================
+    HEADER
+===================
+*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding-block: 4rem;
+    z-index: 4;
+    border-block-end: 1px solid transparent;
+    transition: 250ms ease;
+}
+
+.header.active {
+    padding-block: 2rem;
+    background-color: var(--neutral);
+}
+
+.header.hide {
+    transform: translateY(-100%);
+    transition-delay: 250ms;
+}
+
+.header .container {
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar .logo {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 60px;
+}
+
+.logo span {
+    font-family: var(--font-head);
+    font-weight: var(--font-weight-bold);
+    font-size: 3rem;
+    color: var(--secondary-dark);
+}
+
+
+/* .header .btn { display: none;} */
+
+.navbar {
+    position: fixed;
+    background-color: var(--primary-light);
+    top: 0;
+    left: -36rem;
+    bottom: 0;
+    width: 100%;
+    max-width: 36rem;
+    padding-inline: 3rem;
+    padding-block-end: 5rem;
+    overflow-y: auto;
+    visibility: hidden;
+    z-index: 2;
+    transition: 500ms ease;
+}
+
+.navbar::-webkit-scrollbar-thumb {background-color: var(--secondary-dark);}
+
+.navbar.active {
+    visibility: visible;
+    transform: translateX(36rem);
+}
+
+.navbar .close-btn {
+    color: var(--neutral);
+    border: 1.82px solid currentColor;
+    padding: 4px;
+    border-radius: 50%;
+    margin-inline-start: auto;
+    margin-block: 3rem 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .close-btn ion-icon { --ionicon-stroke-width: 6rem;}
+
+.navbar .close-btn:is(:hover,:focus-visible) { color: var(--secondary-dark);}
+
+.navbar-list {}
+
+.navbar-item {}
+
+.navbar-link {
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-block: 1rem;
+    max-width: unset;
+}
+
+.navbar-link::after {display: none;}
+
+.hover-underline {
+    position: relative;
+    max-width: max-content;
+}
+
+.hover-underline::after {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    border-block:  1px solid var(--secondary-dark) ;
+    transform: scaleX(0.2);
+    opacity: 0;
+    transition: 500ms ease;
+}
+
+.hover-underline:is(:hover, :focus-visible .active)::after {
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.navbar-link .separator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: 0;
+    transition: 250ms ease;
+    color: var(--secondary-dark);
+}
+
+.navbar-link:is(:hover, :focus-visible, .active) .separator { opacity: 1;}
+
+.navbar-link:is(:hover, :focus-visible, .active) .span {
+    color: var(--secondary-dark);
+    transform: translateX(20px);
+}
+
+.navbar-link .span {
+    font-weight: var(--font-weight-medium);
+    transition: 250ms ease;
+}
+
+.nav-open-btn {
+    padding: 12px;
+    padding-inline-end: 0;
+}
+
+.nav-open-btn .line {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--secondary-dark);
+    margin-block: 4px;
+    transform-origin: left;
+    animation: menuBtn 500ms ease-in-out alternate infinite;
+}
+
+@keyframes menuBtn{
+    0% { transform:  scaleX(1);}
+    100% { transform:  scaleX(0.5);}
+}
+
+.nav-open-btn .line-2 { animation-delay: 150ms;}
+
+.nav-open-btn .line-3 { animation-delay: 400ms;}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    transition: 500ms ease;
+    z-index: 1;
+    opacity: 0;
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all ;
+}
+
+
+/*
+===================
+    MEDIA QUERIES
+===================
+*/
+
+
+/* Responsive for larger than 575px screen */
+@media (min-width: 575px) {
+
+
+    /* Header*/
+
+    /* .header .btn {
+        display: block;
+        margin-inline-start: auto;
+    } */
+}
+
+
+/* Responsive for larger than 768px screen */
+@media (min-width: 768px) {
+
+     /* Header*/
+     .navbar-list { margin-inline: 3rem;}
+}
+
+
+/* Responsive for larger than 992px screen */
+@media (min-width: 992px) {
+
+}
+
+
+/* Responsive for larger than 1200px screen */
+@media (min-width: 1200px) {
+
+
+    /* Header */
+    .nav-open-btn,
+    .navbar > *:not(.navbar-list),
+    .header .overlay {display: none; }
+
+    .header .container {max-width: unset;}
+
+    .navbar,
+    .navbar.active,
+    .navbar-list {all: unset;}
+
+    .navbar,
+    .navbar.navbar.active {margin-inline: auto 2rem;}
+
+    .navbar-list {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .navbar .separator {display: none;}
+
+    .navbar-link:is(:hover, :focus-visible, .active) .span {
+        transform: unset;
+    }
+
+    .navbar-link .span{
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: 0.15em;
+    }
+
+    .navbar-link::after { display: block;}
+
+    .navbar-link.active::after {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    .header .btn {margin-inline-start: 0;}
+
+
+
+
+
+}

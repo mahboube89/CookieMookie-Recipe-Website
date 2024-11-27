@@ -9,11 +9,82 @@
 
     <link rel="stylesheet" href="/assets/css/style.css">
 
+    <!-- Js Link -->
+     <script src="/js/app.js" defer></script>
+
     <title>Document</title>
 </head>
 <body>
     
+    <!-- ---------- Header Start ---------- -->
+    <header class="header" data-header>
 
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>DEliSH</span>
+            </a>
+
+            <!-- Navbar Start -->
+            <nav class="navbar" data-navbar>
+
+                <!-- Open Menu Button -->
+                <button class="close-btn" data-nav-toggler aria-label="close menu">
+                    <ion-icon name="close-outline" aria-label="true"></ion-icon>
+                </button>
+
+                <!-- Logo -->
+                <a href="#" class="logo"><span>DEliSH</span></a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">Recipes</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">Blog</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">About us</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav> <!-- Navbar End -->
+
+            <!-- btn for later-->
+
+            <!-- Close Menu Button -->
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler ></div>
+
+        </div>
+
+    </header> <!-- ========== Header End ========== -->
 
 </body>
 </html>

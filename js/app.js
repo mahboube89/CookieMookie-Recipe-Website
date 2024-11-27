@@ -1,14 +1,53 @@
-// Copyright 2024 mae
-// 
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-// 
-//     https://www.apache.org/licenses/LICENSE-2.0
-// 
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+
+const addEventOnElements = function( elements, eventType, callback) {
+    for (let i = 0; i< elements.length; i++) {
+      elements[i].addEventListener(eventType, callback);      
+    }
+}
+
+
+const navbar = document.querySelector("[data-navbar]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay");
+
+
+const toggleNavbar = function() {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("nav-active");
+}
+
+addEventOnElements(navTogglers, "click", toggleNavbar);
+
+
+
+const header = document.querySelector("[data-header]");
+
+let lastScrollPos = 0;
+
+
+const hideHeader = function() {
+    const isScrollButtom = lastScrollPos < window.scrollY;
+
+    if(isScrollButtom) {
+        header.classList.add("hide"); 
+    }
+    else {
+        header.classList.remove("hide"); 
+    }
+
+    lastScrollPos = window.scrollY;
+
+}
+
+window.addEventListener("scroll" , function() {
+    if(this.window.scrollY >= 60) {
+        header.classList.add("active"); 
+        // hideHeader();
+    }
+    else {
+        header.classList.remove("active"); 
+    }
+
+});
 
