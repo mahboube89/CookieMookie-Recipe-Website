@@ -1034,6 +1034,47 @@ h2 {
 
 /*
 ===================
+    CATEGORY
+===================
+*/
+.categories-section {
+    margin-bottom: 3rem;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-block-start: 24px;
+}
+
+.category-link {
+    height: 4rem;
+    border-radius: 4px;
+    background-color: var(--neutral-light);
+    max-width: max-content;
+    padding-inline: 1.6rem;
+    display: grid;
+    place-items: center;
+}
+
+.category-link:is(:hover, :focus-visible) {
+    background-color: var(--accent);
+}
+
+.category-name {}
+
+
+
+
+
+
+
+
+/*
+===================
     FOOTER
 ===================
 */
