@@ -20,6 +20,9 @@ const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay");
 
+const openMenuBtn = document.querySelector(".open-menu");
+const closeMenuBtn = document.querySelector(".close-menu");
+
 
 /**
  * Toggles the visibility of the navbar and overlay.
@@ -29,10 +32,18 @@ const toggleNavbar = function() {
     navbar.classList.toggle("active"); // Show or hide the navbar
     overlay.classList.toggle("active"); // Show or hide the overlay
     document.body.classList.toggle("nav-active"); // Prevent scrolling when nav is active
+    openMenuBtn.classList.toggle("hidden");
+    closeMenuBtn.classList.toggle("visible");
 }
+
+openMenuBtn.addEventListener("click", () => {
+    
+})
 
 // Attach a "click" event listener to all nav toggler buttons.
 addEventOnElements(navTogglers, "click", toggleNavbar);
+
+
 
 
 // Selects the header element by its data attribute.
@@ -68,7 +79,7 @@ const hideHeader = function() {
 window.addEventListener("scroll" , function() {
     if(this.window.scrollY >= 60) {
         header.classList.add("active"); // Add "active" class when scrolled 60px or more
-        // hideHeader();
+        hideHeader();
     }
     else {
         header.classList.remove("active"); // Remove "active" class when scrolled less than 60px
