@@ -12,7 +12,8 @@
     <!-- Js Link -->
      <script src="/js/app.js" defer></script>
 
-    <title>Document</title>
+    <title>Delish - Recipe Website</title>
+
 </head>
 <body>
     
@@ -40,14 +41,14 @@
                 <ul class="navbar-list">
 
                     <li class="navbar-item">
-                        <a href="#" class="link navbar-link hover-underline" >
+                        <a href="#" class="link navbar-link hover-underline active" >
                             <div class="separator"></div>
                             <span class="span">Home</span>
                         </a>
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="link navbar-link hover-underline" >
+                        <a href="/recipes.html" class="link navbar-link hover-underline " >
                             <div class="separator"></div>
                             <span class="span">Recipes</span>
                         </a>
@@ -86,1379 +87,1380 @@
 
     </header> <!-- ========== Header End ========== -->
 
-    <!-- ---------- Hero Start ---------- -->
-    <section class="hero text-center" aria-label="home" id="home">
+    <main>
 
-        <ul data-hero-slider>
-
-            <li class="slider-item active" data-hero-slider-item>
-
-                <div class="slider-bg">
-                    <img src="./assets/images/slider/slider-img-1.jpg" alt="" class="img-cover" width="1880" height="950">
-                </div>
-
-                <div class="content-wrapper glass-bg">
-
-                    <p class="subtitle subtitle--section slider-reveal">Celebrate Tradition</p>
+        <!-- ---------- Hero Start ---------- -->
+        <section class="hero text-center" aria-label="home" id="home">
     
-                    <h2 class="hero-title slider-reveal">Taste the Roots of Culture</h2>
+            <ul data-hero-slider>
     
-                    <p class="hero-text slider-reveal">Dive into time-honored recipes that bring heritage and flavor to your plate.</p>
+                <li class="slider-item active" data-hero-slider-item>
     
-                    <a href="#" class="btn btn-primary slider-reveal">
-                        <span class="text text-1">Explore Recipes</span>
-                        <span class="text text-2" aria-hidden="true">Explore Recipes</span>
-                    </a>
-                </div>
-
-            </li>
-
-            <li class="slider-item active" data-hero-slider-item>
-
-                <div class="slider-bg">
-                    <img src="./assets/images/slider/slider-img-2.jpg" alt="" class="img-cover" width="1880" height="950">
-                </div>
-
-                <div class="content-wrapper glass-bg">
-                    <p class="subtitle subtitle--section slider-reveal">Healthy & Vibrant</p>
-    
-                    <h2 class="hero-title slider-reveal">Refreshing Salad Ideas</h2>
-    
-                    <p class="hero-text slider-reveal">Enjoy a variety of crisp, colorful, and nutritious salads for every occasion.</p>
-
-                    <a href="#" class="btn btn-primary slider-reveal">
-                        <span class="text text-1">Try Salads</span>
-                        <span class="text text-2" aria-hidden="true">Try Salads</span>
-                    </a>
-
-                </div>
-
-            </li>
-
-            <li class="slider-item active" data-hero-slider-item>
-
-                <div class="slider-bg">
-                    <img src="./assets/images/slider/slider-img-3.jpg" alt="" class="img-cover" width="1880" height="950">
-                </div>
-
-                <div class="content-wrapper glass-bg">
-
-                    <p class="subtitle subtitle--section slider-reveal">Fresh & Flavorful</p>
-    
-                    <h2 class="hero-title slider-reveal">Handmade Pasta Recipes</h2>
-    
-                    <p class="hero-text slider-reveal">Discover the secrets to crafting authentic pasta dishes with fresh ingredients.</p>
-    
-                    <a href="#" class="btn btn-primary slider-reveal">
-                        <span class="text text-1">Explore Pasta</span>
-                        <span class="text text-2" aria-hidden="true">Explore Pasta</span>
-                    </a>
-
-                </div>
-
-            </li>
-        </ul>
-
-        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
-            <ion-icon name="arrow-back-circle-outline"></ion-icon>
-        </button>
-
-        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
-            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-        </button>
-
-        <!-- <a href="#" class="hero-btn has-after">
-            <img src="./assets/images/icon-all.png" alt="" width="48" height="48" >
-            <span class="subtitle text-center span">All Recipes</span>
-        </a> -->
-
-    </section> <!-- ========== Hero End ========== -->
-
-    <!-- ---------- Meal Options Start ---------- -->
-    <section class="section meal-options text-center">
-
-        <div class="container">
-
-            <!-- Headers -->
-            <header class="meal-options-header">
-                <p class="subtitle subtitle--section meal-options-subtitle">Choose Your Preferences</p>
-                <h2 class="meal-options-title">Find the Perfect Recipe</h2>
-            </header>
-
-            <div class="meal-options-container">
-
-                <!-- Option 1: Diet -->
-                <div class="meal-option">
-    
-                    <h2 class="meal-option-title">Diet</h2>
-    
-                    <ul class="meal-option-list meal-option--diet ">
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-vegan.png" alt="Vegan Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Vegen</h3>
-                            </a>
-                        </li>
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-vegetarian.png" alt="Vegetarian Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Vegetarian</h3>
-                            </a>
-                        </li>
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-all.png" alt="All Diets Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">All</h3>
-                            </a>
-                            
-                        </li>
-                    </ul>
-                </div>
-                
-    
-                <!-- Option 2: Meal Time -->
-    
-                <div class="meal-option">
-    
-                    <h2 class="meal-option-title">Meal Time</h2>
-    
-                    <ul class="meal-option-list meal-option--time ">
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-breakfast.png" alt="Breakfast Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Breakfast</h3>
-                            </a>
-                        </li>
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-lunch.png" alt="Lunch Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Lunch</h3>
-                            </a>
-                        </li>
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-dinner.png" alt="Dinner Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Dinner</h3>
-                            </a>
-                        </li>
-        
-                    </ul>
-                </div>
-                
-                <!-- Option 3: Type -->
-                <div class="meal-option">
-                    
-                    <h2 class="meal-option-title">Type</h2>
-    
-                    <ul class="meal-option-list meal-option--type ">
-    
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-30min.png" alt="Under 30 Minutes Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Under 30 Min</h3>
-                            </a>
-                           
-                        </li>
-        
-                        <li class="meal-item">
-        
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-children-food.png" alt="For Children Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">For Children</h3>
-                            </a>
-                            
-                        </li>
-        
-                        <li class="meal-item">
-                            <div class="meal-icon-wrapper">
-                                <img src="./assets/images/icon-comfort.png" alt="Comfort Food Icon" class="meal-icon">
-                            </div>
-                            <a href="#" class="meal-link">
-                                <h3 class="meal-text">Comfort Food</h3>
-                            </a>
-                            
-                        </li>
-        
-                    </ul>
-                </div>
-                
-            </div>
-    
-        </div>
-      
-    </section> <!-- ========== Meal Options End ========== -->
-
-
-    <!-- ---------- Latest Recipe Slider Start ---------- -->
-    <section class="section text-center latest-recipes-section">
-
-        <div class="container">
-
-            <!-- Headers -->
-            <header class="latest-recipes-header">
-                <p class="subtitle subtitle--section">Fresh from the Kitchen</p>
-                <h2 class="title--section" >Discover New Dishes</h2>
-            </header>
-    
-            <ul class="slider recipe-list">
-    
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Kid-Friendly</span>
+                    <div class="slider-bg">
+                        <img src="./assets/images/slider/slider-img-1.jpg" alt="" class="img-cover" width="1880" height="950">
                     </div>
     
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-1.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
+                    <div class="content-wrapper glass-bg">
     
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
+                        <p class="subtitle subtitle--section slider-reveal">Celebrate Tradition</p>
         
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
+                        <h2 class="hero-title slider-reveal">Taste the Roots of Culture</h2>
         
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
+                        <p class="hero-text slider-reveal">Dive into time-honored recipes that bring heritage and flavor to your plate.</p>
         
-                                <button class="icon-btn recipe-saved" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Dessert</span>
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Explore Recipes</span>
+                            <span class="text text-2" aria-hidden="true">Explore Recipes</span>
+                        </a>
                     </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-2.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-saved" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Low-Calorie</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-3.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegetarian</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-4.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-saved" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegetarian</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-5.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegetarian</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-6.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Lactose-Free</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-7.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-saved" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Sugar-Free</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-8.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegan</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-9.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegetarian</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-10.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-saved" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>Vegetarian</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-11.jpeg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
-    
-                </li>
-                <li class="recipe-list-item">
-    
-                    <!-- Tag -->
-                    <div class="recipe-tag">
-                        <span>High-Protein</span>
-                    </div>
-    
-                    <!-- Recipe Card -->
-                    <article class="recipe-card card">
-        
-                        <!-- Card Media -->
-                        <figure class="card-media card-img-holder">
-                            <img 
-                                src="./assets/images/recipe/recipe-12.jpg"
-                                alt=""  
-                                height="200" 
-                                width="200"
-                                loading="lazy" 
-                                class="img-cover">
-                        </figure>
-        
-                        <!-- Card Content -->
-                        <div class="recipe-card-content card-content">
-    
-                            <h3 class="card-title">
-                                <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
-                            </h3>
-        
-                            <!-- Meta Information -->
-                            <div class="recipe-card-meta card-meta-wrapper">
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="alarm-outline"></ion-icon>
-                                    <span class="subtitle">2 Minutes</span>
-                                </div>
-        
-                                <div class="recipe-meta-item meta-item">
-                                    <ion-icon name="person-outline"></ion-icon>
-                                    <span class="subtitle">2 Serving</span>
-                                </div>
-        
-                                <button class="icon-btn recipe-removed" aria-label="bookmark icon">
-                                    <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
-                                    <ion-icon name="bookmark" class="bookmark"></ion-icon>
-                                </button>
-                            </div>
-                        </div>
-
-                    </article>
     
                 </li>
     
+                <li class="slider-item active" data-hero-slider-item>
     
+                    <div class="slider-bg">
+                        <img src="./assets/images/slider/slider-img-2.jpg" alt="" class="img-cover" width="1880" height="950">
+                    </div>
+    
+                    <div class="content-wrapper glass-bg">
+                        <p class="subtitle subtitle--section slider-reveal">Healthy & Vibrant</p>
+        
+                        <h2 class="hero-title slider-reveal">Refreshing Salad Ideas</h2>
+        
+                        <p class="hero-text slider-reveal">Enjoy a variety of crisp, colorful, and nutritious salads for every occasion.</p>
+    
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Try Salads</span>
+                            <span class="text text-2" aria-hidden="true">Try Salads</span>
+                        </a>
+    
+                    </div>
+    
+                </li>
+    
+                <li class="slider-item active" data-hero-slider-item>
+    
+                    <div class="slider-bg">
+                        <img src="./assets/images/slider/slider-img-3.jpg" alt="" class="img-cover" width="1880" height="950">
+                    </div>
+    
+                    <div class="content-wrapper glass-bg">
+    
+                        <p class="subtitle subtitle--section slider-reveal">Fresh & Flavorful</p>
+        
+                        <h2 class="hero-title slider-reveal">Handmade Pasta Recipes</h2>
+        
+                        <p class="hero-text slider-reveal">Discover the secrets to crafting authentic pasta dishes with fresh ingredients.</p>
+        
+                        <a href="#" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">Explore Pasta</span>
+                            <span class="text text-2" aria-hidden="true">Explore Pasta</span>
+                        </a>
+    
+                    </div>
+    
+                </li>
             </ul>
     
-            <!-- Explore More Recipes Button -->
-            <a href="./recipes.html" class="btn btn-primary section-btn">
-                <span class="text text-1">View All Recipes</span>
-                <span class="text text-2" aria-hidden="true">View All Recipes</span>
-            </a>
-
-        </div>
-
-    </section> <!-- ========== Latest Recipe Slider End ========== -->
-
-
-    <!-- ---------- Blog Start ---------- -->
-    <section class="section blog-section text-center" aria-labelledby="blog-section-title" data-blog-section>
-
-        <div class="container">
-
-            <!-- Headers -->
-            <header class="blog-section-header">
-                <p class="subtitle subtitle--section">Insights & Stories</p>
-                <h2 class="title--section" id="slider-lable-1">Explore Our Latest Blogs</h2>
-            </header>
-
-            <div class="slider blog-list-slider">
-
-                <ul class="blog-list" data-blog-list>
-
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-1.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited " >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </button>
+    
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+    
+            <!-- <a href="#" class="hero-btn has-after">
+                <img src="./assets/images/icon-all.png" alt="" width="48" height="48" >
+                <span class="subtitle text-center span">All Recipes</span>
+            </a> -->
+    
+        </section> <!-- ========== Hero End ========== -->
+    
+        <!-- ---------- Meal Options Start ---------- -->
+        <section class="section meal-options text-center">
+    
+            <div class="container">
+    
+                <!-- Headers -->
+                <header class="meal-options-header">
+                    <p class="subtitle subtitle--section meal-options-subtitle">Choose Your Preferences</p>
+                    <h2 class="meal-options-title">Find the Perfect Recipe</h2>
+                </header>
+    
+                <div class="meal-options-container">
+    
+                    <!-- Option 1: Diet -->
+                    <div class="meal-option">
+        
+                        <h2 class="meal-option-title">Diet</h2>
+        
+                        <ul class="meal-option-list meal-option--diet ">
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-vegan.png" alt="Vegan Icon" class="meal-icon">
                                 </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-2.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited " >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Vegen</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-vegetarian.png" alt="Vegetarian Icon" class="meal-icon">
                                 </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-3.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Vegetarian</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-all.png" alt="All Diets Icon" class="meal-icon">
                                 </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-4.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-5.jpeg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-6.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-7.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-8.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-9.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-                    <!-- Blog Item -->
-                    <li class="blog-list-item">
-
-                        <article class="blog-card card">
-
-                            <!-- Blog Image -->
-                            <figure class="card-media card-img-holder blog-card-media">
-                                <img src="./assets/images/blog/blog-10.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
-                            </figure>
-
-                            <div class="card-content blog-card-content">
-                                <h3 class="blog-card-title text-limited" >
-                                    <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
-                                </h3>
-                                <p class="blog-card-excerpt text text-limited">
-                                    Discover tips for preparing balanced meals that are delicious and nutritious.
-                                </p>
-
-                                <!-- Blog Metadata -->
-                                <div class="blog-meta card-meta-wrapper">
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="calendar-outline"></ion-icon>
-                                        <span class="subtitle">Nov 26, 2024</span>
-                                    </div>
-
-                                    <div class="blog-meta-item meta-item">
-                                        <ion-icon name="person-outline"></ion-icon>
-                                        <span class="subtitle">By John Doe</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-
-                    </li>
-
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">All</h3>
+                                </a>
+                                
+                            </li>
+                        </ul>
+                    </div>
                     
-
-                    <li class="blog-list-item blog-list-item--load-more" >
-                        <div class="card">
-                            <a href="#" class="load-more-btn">
-                                <span>Show More Blogs</span>
-                                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
-                            </a>
-
+        
+                    <!-- Option 2: Meal Time -->
+        
+                    <div class="meal-option">
+        
+                        <h2 class="meal-option-title">Meal Time</h2>
+        
+                        <ul class="meal-option-list meal-option--time ">
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-breakfast.png" alt="Breakfast Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Breakfast</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-lunch.png" alt="Lunch Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Lunch</h3>
+                                </a>
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-dinner.png" alt="Dinner Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Dinner</h3>
+                                </a>
+                            </li>
+            
+                        </ul>
+                    </div>
+                    
+                    <!-- Option 3: Type -->
+                    <div class="meal-option">
+                        
+                        <h2 class="meal-option-title">Type</h2>
+        
+                        <ul class="meal-option-list meal-option--type ">
+        
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-30min.png" alt="Under 30 Minutes Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Under 30 Min</h3>
+                                </a>
+                               
+                            </li>
+            
+                            <li class="meal-item">
+            
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-children-food.png" alt="For Children Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">For Children</h3>
+                                </a>
+                                
+                            </li>
+            
+                            <li class="meal-item">
+                                <div class="meal-icon-wrapper">
+                                    <img src="./assets/images/icon-comfort.png" alt="Comfort Food Icon" class="meal-icon">
+                                </div>
+                                <a href="#" class="meal-link">
+                                    <h3 class="meal-text">Comfort Food</h3>
+                                </a>
+                                
+                            </li>
+            
+                        </ul>
+                    </div>
+                    
+                </div>
+        
+            </div>
+          
+        </section> <!-- ========== Meal Options End ========== -->
+    
+    
+        <!-- ---------- Latest Recipe Slider Start ---------- -->
+        <section class="section text-center latest-recipes-section">
+    
+            <div class="container">
+    
+                <!-- Headers -->
+                <header class="latest-recipes-header">
+                    <p class="subtitle subtitle--section">Fresh from the Kitchen</p>
+                    <h2 class="title--section" >Discover New Dishes</h2>
+                </header>
+        
+                <ul class="slider recipe-list">
+        
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Kid-Friendly</span>
                         </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-1.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
                     </li>
-
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Dessert</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-2.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Low-Calorie</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-3.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegetarian</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-4.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegetarian</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-5.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegetarian</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-6.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Lactose-Free</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-7.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Sugar-Free</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-8.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegan</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-9.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegetarian</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-10.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>Vegetarian</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-11.jpeg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+                    <li class="recipe-list-item">
+        
+                        <!-- Tag -->
+                        <div class="recipe-tag">
+                            <span>High-Protein</span>
+                        </div>
+        
+                        <!-- Recipe Card -->
+                        <article class="recipe-card card">
+            
+                            <!-- Card Media -->
+                            <figure class="card-media card-img-holder">
+                                <img 
+                                    src="./assets/images/recipe/recipe-12.jpg"
+                                    alt=""  
+                                    height="200" 
+                                    width="200"
+                                    loading="lazy" 
+                                    class="img-cover">
+                            </figure>
+            
+                            <!-- Card Content -->
+                            <div class="recipe-card-content card-content">
+        
+                                <h3 class="card-title">
+                                    <a href="./detail.html" class="card-link text-limited">Quick & Easy Breakfast</a>
+                                </h3>
+            
+                                <!-- Meta Information -->
+                                <div class="recipe-card-meta card-meta-wrapper">
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="alarm-outline"></ion-icon>
+                                        <span class="subtitle">2 Minutes</span>
+                                    </div>
+            
+                                    <div class="recipe-meta-item meta-item">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span class="subtitle">2 Serving</span>
+                                    </div>
+            
+                                    <button class="icon-btn recipe-removed" aria-label="bookmark icon">
+                                        <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                                        <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+    
+                        </article>
+        
+                    </li>
+        
+        
                 </ul>
-           
+        
+                <!-- Explore More Recipes Button -->
+                <a href="./recipes.html" class="btn btn-primary section-btn">
+                    <span class="text text-1">View All Recipes</span>
+                    <span class="text text-2" aria-hidden="true">View All Recipes</span>
+                </a>
+    
             </div>
-
-            <!-- Explore More Blogs Button -->
-            <a href="./blogs.html" class="btn btn-primary section-btn">
-                <span class="text text-1">View All Blogs</span>
-                <span class="text text-2" aria-hidden="true">View All Blogs</span>
-            </a>
-        </div>
-
-    </section> <!-- ========== Blog End ========== -->
-
-    <!-- ---------- Categories Start ---------- -->
-    <section class="section text-center categories-section">
-        <div class="container">
-            <header class="categories-header">
-                <p class="subtitle subtitle--section">What’s Cooking?</p>
-                <h2 class="title--section">Discover Recipes You’ll Love</2>
-            </header>
     
-            <ul class="categories-list">
-                
-                <!-- Category Item -->
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Sugar-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Egg-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Lactose-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Diabetic-Friendly</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Low-Carb </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">International Cuisine</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Under 30 Minutes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Kid-Friendly</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Holiday Specials</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">BBQ & Grilling </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Nut-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Low-Sodium</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Keto Creations</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Soy-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Vegetarian Favorites</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Vegan Treats</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">High-Protein</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Low-Calorie</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Dairy-Free</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="category-link">
-                        <span class="category-name">Gluten-Free</span>
-                    </a>
-                </li>
+        </section> <!-- ========== Latest Recipe Slider End ========== -->
     
-                
-            </ul>
-        </div>
-    </section>
+    
+        <!-- ---------- Blog Start ---------- -->
+        <section class="section blog-section text-center" aria-labelledby="blog-section-title" data-blog-section>
+    
+            <div class="container">
+    
+                <!-- Headers -->
+                <header class="blog-section-header">
+                    <p class="subtitle subtitle--section">Insights & Stories</p>
+                    <h2 class="title--section" id="slider-lable-1">Explore Our Latest Blogs</h2>
+                </header>
+    
+                <div class="slider blog-list-slider">
+    
+                    <ul class="blog-list" data-blog-list>
+    
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-1.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited " >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+    
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-2.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited " >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-3.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-4.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-5.jpeg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-6.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-7.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-8.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-9.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+                        <!-- Blog Item -->
+                        <li class="blog-list-item">
+    
+                            <article class="blog-card card">
+    
+                                <!-- Blog Image -->
+                                <figure class="card-media card-img-holder blog-card-media">
+                                    <img src="./assets/images/blog/blog-10.jpg" alt=""  height="200" width="200" class="blog-card-image img-cover" loading="lazy">
+                                </figure>
+    
+                                <div class="card-content blog-card-content">
+                                    <h3 class="blog-card-title text-limited" >
+                                        <a href="./detail.html" class="card-link text-limited">How to Create Healthy Meals</a>
+                                    </h3>
+                                    <p class="blog-card-excerpt text text-limited">
+                                        Discover tips for preparing balanced meals that are delicious and nutritious.
+                                    </p>
+    
+                                    <!-- Blog Metadata -->
+                                    <div class="blog-meta card-meta-wrapper">
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="calendar-outline"></ion-icon>
+                                            <span class="subtitle">Nov 26, 2024</span>
+                                        </div>
+    
+                                        <div class="blog-meta-item meta-item">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                            <span class="subtitle">By John Doe</span>
+                                        </div>
+    
+                                    </div>
+                                </div>
+    
+                            </article>
+    
+                        </li>
+    
+                        
+    
+                        <li class="blog-list-item blog-list-item--load-more" >
+                            <div class="card">
+                                <a href="#" class="load-more-btn">
+                                    <span>Show More Blogs</span>
+                                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                                </a>
+    
+                            </div>
+                        </li>
+    
+                    </ul>
+               
+                </div>
+    
+                <!-- Explore More Blogs Button -->
+                <a href="./blogs.html" class="btn btn-primary section-btn">
+                    <span class="text text-1">View All Blogs</span>
+                    <span class="text text-2" aria-hidden="true">View All Blogs</span>
+                </a>
+            </div>
+    
+        </section> <!-- ========== Blog End ========== -->
+    
+        <!-- ---------- Categories Start ---------- -->
+        <section class="section text-center categories-section">
+            <div class="container">
+                <header class="categories-header">
+                    <p class="subtitle subtitle--section">What’s Cooking?</p>
+                    <h2 class="title--section">Discover Recipes You’ll Love</2>
+                </header>
+        
+                <ul class="categories-list">
+                    
+                    <!-- Category Item -->
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Sugar-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Egg-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Lactose-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Diabetic-Friendly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Carb </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">International Cuisine</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Under 30 Minutes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Kid-Friendly</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Holiday Specials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">BBQ & Grilling </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Nut-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Sodium</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Keto Creations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Soy-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Vegetarian Favorites</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Vegan Treats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">High-Protein</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Low-Calorie</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Dairy-Free</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="category-link">
+                            <span class="category-name">Gluten-Free</span>
+                        </a>
+                    </li>
+        
+                    
+                </ul>
+            </div>
+        </section><!-- ========== Categories End ========== -->
+    </main>
 
-    <!-- ========== Categories End ========== -->
-    
     <!-- ---------- Footer Start ---------- -->
     <footer>
         <div class="container">
@@ -1621,7 +1623,5 @@
             </section>
         </div>
     </footer> <!-- ========== Footer End ========== -->
-
-
 </body>
 </html>

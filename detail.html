@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Js Link -->
+     <script src="/js/detail.js" defer></script>
+
+    <title>Delish - Recipe Details</title>
+</head>
+<body>
+
+    <!-- ---------- Header Start ---------- -->
+    <header class="header" data-header>
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <span>DEliSH</span>
+            </a>
+
+            <!-- Navbar Start -->
+            <nav class="navbar" data-navbar>
+
+                <!-- Open Menu Button -->
+                <button class="close-btn" data-nav-toggler aria-label="close menu">
+                    <ion-icon name="close-outline" aria-label="true"></ion-icon>
+                </button>
+
+                <!-- Logo -->
+                <a href="#" class="logo"><span>DEliSH</span></a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="/" class="link navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="link navbar-link hover-underline " >
+                            <div class="separator"></div>
+                            <span class="span">Recipes</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="link navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">Blog</span>
+                        </a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="link navbar-link hover-underline" >
+                            <div class="separator"></div>
+                            <span class="span">About us</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav> <!-- Navbar End -->
+
+            <!-- btn for later-->
+
+            <!-- Close Menu Button -->
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler ></div>
+
+        </div>
+
+    </header> <!-- ========== Header End ========== -->
+    
+
+    <!-- ---------- Main Start ---------- -->
+    <main class="detail-page-main">
+
+        <div class="container">
+
+            <!-- Recipe Banner -->
+            <section class="section recipe-detail" data-detail-container>
+
+                <!-- Recipe Image -->
+                <figure class="recipe-detail-banner img-holder">
+                    <img class="img-cover" src="./assets/images/recipe/recipe-1.jpg" alt="" width="300" height="300" >
+                </figure>
+
+                <!-- Recipe Content -->
+                <div class="recipe-detail-content">
+
+                    <!-- Title and Bookmark Button -->
+                    <div class="recipe-title-wrapper">
+                        <h1 class="recipe-title" >food name</h1>
+
+                        <button class="icon-btn recipe-saved" aria-label="bookmark icon">
+                            <ion-icon name="bookmark-outline" class="bookmark-add"></ion-icon>
+                            <ion-icon name="bookmark" class="bookmark"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- Author and Date -->
+                    <div class="recipe-meta">
+
+                        <div class=" meta-item">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <span class="subtitle">Nov 26, 2024</span>
+                        </div>
+
+                        <div class="meta-item">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <span class="subtitle">By John Doe</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Recipe Stats -->
+                    <div class="recipe-stats">
+                        <div class="recipe-stats-item">
+                            <p class="stats-value" >2</p>
+                            <span class="subtitle">Minutes</span>
+                        </div>
+
+                        <div class="recipe-stats-item">
+                            <p class="stats-value" >2</p>
+                            <span class="subtitle">Serving</span>
+                        </div>
+
+                        <div class="recipe-stats-item">
+                            <p class="stats-value" >6</p>
+                            <span class="subtitle">Ingredients</span>
+                        </div>
+
+                        <div class="recipe-stats-item">
+                            <p class="stats-value" >345</p>
+                            <span class="subtitle">Calories</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Recipe Tags -->
+                    <div class="recipe-tags">
+
+                        <a href="#" class="filter-chip"><span>Breakfast</span></a>
+                        <a href="#" class="filter-chip"><span>American</span></a>
+                        <a href="#" class="filter-chip"><span>Suger Free</span></a>
+                        <a href="#" class="filter-chip"><span>Under 30 Minutes</span></a>
+
+                    </div>
+
+                    <!-- Ingredients -->
+                    <h2 class="recipe-ingredients-title">
+                        Ingredients
+                        <span class="subtitle">for 6 serving</span>
+                    </h2>
+
+                    <ul class="recipe-ingredients-list">
+
+                        <li class="recipe-ingredients-item">
+                            2 1/2 Pounds skirt steak or ....
+                        </li>
+
+                        <li class="recipe-ingredients-item">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat deleniti excepturi unde at molestiae quos nobis repellat vitae aliquam.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+    </main> <!-- ========== Main End ========== -->
+    
+    <!-- ---------- Footer Start ---------- -->
+    <footer>
+        <div class="container">
+            <section class="section footer">
+    
+                <!-- Footer Top Section -->
+                <div class="footer__top">
+    
+                    <!-- Brand and Intro -->
+                    <div class="footer__brand">
+                        <a href="#" class="logo">
+                            <span>DEliSH</span>
+                        </a>
+                        <p class="footer__description text">
+                            Discover the joy of cooking with our curated collection of recipes, tips, and culinary inspiration. 
+                            Join our community and start your flavorful journey today!
+                        </p>
+                    </div>
+    
+                    <!-- Back to Top Button -->
+                    <div class="footer__back-to-top">
+                        <a href="#top" class="back-to-top-btn" aria-label="Back to Top" data-back-top-btn> 
+                            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+                            <span class="text">Back to Top</span>
+                        </a>
+                    </div>
+    
+                </div>
+    
+                <div class="footer__body">
+                    <!-- Footer Links Section -->
+                    <div class="footer__links">
+                        <!-- About Us Column -->
+                        <div class="footer__column">
+                            <h3 class="footer__title">About Us</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Our Story</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Our Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Sustainability</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Careers</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <!-- Get in Touch Column -->
+                        <div class="footer__column">
+                            <h3 class="footer__title">Get in Touch</h3>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Help Center</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">FAQs</span>
+                                    </a>
+                                <li>
+                                    <a href="#" class="link footer__link" >
+                                        <div class="separator"></div>
+                                        <span class="span">Feedback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Section -->
+                    <div class="footer__newsletter">
+                        <div class="footer__newsletter-content">
+                            <h3 class="footer__title">Newsletter</h3>
+                            <p class="footer__newsletter-description text">
+                                Subscribe to receive the latest recipes, tips, and exclusive content delivered right to your inbox!
+                            </p>
+                        </div>
+                        <form class="footer__newsletter-form">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Your email address"
+                                class="footer__input"
+                                autocomplete="off"
+                                required
+                            />
+                            <button type="submit" class="btn btn-primary footer__btn">
+                                <span>Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom Section -->
+                <div class="footer__bottom">
+                    <!-- Copyright -->
+                    <p class="footer__copyright subtitle">
+                        &copy; 2024 Copyright by
+                        <a
+                            class="footer__author-link"
+                            href="https://linkedin.com/in/mahboubeh-ranjbar-944132239"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Mahboubeh Ranjbar
+                        </a>
+                    </p>
+    
+                    <!-- Social Links -->
+                    <ul class="social__list">
+                        <li>
+                            <a href="#" class="social__link" aria-label="LinkedIn">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__link" aria-label="YouTube">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__link" aria-label="GitHub">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social__link" aria-label="Facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </section>
+        </div>
+    </footer> <!-- ========== Footer End ========== -->
+
+</body>
+</html>
