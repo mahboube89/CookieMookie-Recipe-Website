@@ -16,6 +16,7 @@ const addEventOnElements = function( elements, eventType, callback) {
 
 
 // Selects the navbar, toggler buttons, and overlay elements by their data attributes.
+
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay");
@@ -34,6 +35,7 @@ const toggleNavbar = function() {
     document.body.classList.toggle("nav-active"); // Prevent scrolling when nav is active
     openMenuBtn.classList.toggle("hidden");
     closeMenuBtn.classList.toggle("visible");
+    if (navbar.classList.contains("active")) header.classList.remove("active");
 }
 
 openMenuBtn.addEventListener("click", () => {
@@ -79,7 +81,7 @@ const hideHeader = function() {
 window.addEventListener("scroll" , function() {
     if(this.window.scrollY >= 60) {
         header.classList.add("active"); // Add "active" class when scrolled 60px or more
-        hideHeader();
+        // hideHeader();
     }
     else {
         header.classList.remove("active"); // Remove "active" class when scrolled less than 60px
