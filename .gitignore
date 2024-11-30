@@ -1,6 +1,9 @@
 # Node modules
 node_modules/
 
+# Parsel cache
+.parcel-cache
+
 # Logs
 logs/
 *.log
