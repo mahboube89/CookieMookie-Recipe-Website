@@ -118,7 +118,7 @@ const sliderNext = function() {
     updateSliderPos();
 }
 
-heroSliderNextBtn.addEventListener("click" , sliderNext);
+if(heroSliderNextBtn) heroSliderNextBtn.addEventListener("click" , sliderNext);
 
 const slidePrev = function() {
 

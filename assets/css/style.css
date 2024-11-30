@@ -957,7 +957,7 @@ h2 {
     left: 10px;
     background-color: var(--neutral-light);
     padding: .5rem .8rem;
-    z-index: 3;
+    z-index: 1;
     border-radius: 4px;
     font-size: 1.2rem;
 }
