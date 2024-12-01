@@ -399,6 +399,23 @@ h2 {
 }
 
 
+.spinner {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.spinner svg {
+    height: 4rem;
+    width: 4rem;
+    fill: var(--neutral);
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+
 
 /*
 ===================
@@ -1007,6 +1024,7 @@ h2 {
     position: absolute;
     animation: keyframes-fill 0.5s;
     display: block;
+    fill : var(--secondary-dark);
     transform-origin: top;
   }
   
@@ -1378,7 +1396,7 @@ h2 {
     */
 .detail-page-main { margin: 8rem auto;}
 
-.recipe-detail {}
+.recipe-detail-container {}
 
 .recipe-detail-banner {
     width: 100%;
@@ -1396,12 +1414,14 @@ h2 {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    margin-bottom: 2rem;
 }
 
 .recipe-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
+   
 }
 
 
@@ -1433,6 +1453,7 @@ h2 {
 }
 
 .stats-value {
+    color: var(--secondary-dark);
     font-weight: var(--font-weight-bold);
 }
 
@@ -1457,6 +1478,8 @@ h2 {
     place-items: center;
 }
 
+.recipe-tags .filter-chip:hover {background-color: var(--accent);}
+
 .recipe-ingredients-title {
     display: flex;
     justify-content: space-between;
@@ -1471,6 +1494,7 @@ h2 {
 }
 
 .recipe-ingredients-list {
+
     border-block-start: 1px solid var(--neutral-light);
     padding-block-start: 8px;
     margin-block-start: 16px;
@@ -1482,7 +1506,41 @@ h2 {
     margin-inline-start: 24px;
 }
 
+.recipe-ingredients-item,
+.recipe-instrcution-wrapper {
+    font-family: var(--font-light);
+    font-size: 1.3rem;
+    word-spacing:-2px;
+}
 
+.recipe-ingredients-info span,
+.recipe-instrcution-item  span {display: inline;}
+
+.recipe-instrcution-wrapper {
+    
+}
+
+.recipe-instrcution-header {}
+
+.recipe-instrcution-subtitle {color: var(--secondary-dark);}
+
+
+
+.recipe-instrcution-list {
+    background-color: var(--neutral-light);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+
+.recipe-ingredients-quantity,
+.recipe-ingredient-unit,
+.recipe-instrcution-item  span{
+    font-weight: var(--font-weight-bold);
+     color: var(--secondary-dark);
+}
+
+.recipe-instrcution-item {margin-bottom: 1.5rem;}
 
     /*
     =================================================
