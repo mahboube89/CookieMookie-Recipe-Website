@@ -1,19 +1,27 @@
+"use strict";
+
+import { addEventOnElements } from "./utils.js";
+
+
+
+// Detect current page
+const currentPage = document.body.dataset.page;
+
+if (currentPage === "index") {
+
+    import("./index.js").then((module) => module.init());
+
+} else if (currentPage === "recipes") {
+
+    import("./recipes.js").then((module) => module.init());
+
+} else if (currentPage === "detail") {
+    
+    import("./detail.js").then((module) => module.init());
+}
 
 
 // Navbar --------------------------- <<
-
-/**
- * Adds an event listener to multiple elements.
- * @param {NodeList} elements - List of elements to add the event listener to.
- * @param {string} eventType - The type of event to listen for (e.g., 'click').
- * @param {function} callback - The function to execute when the event occurs.
- */
-const addEventOnElements = function( elements, eventType, callback) {
-    for (let i = 0; i< elements.length; i++) {
-      elements[i].addEventListener(eventType, callback);      
-    }
-}
-
 
 // Selects the navbar, toggler buttons, and overlay elements by their data attributes.
 
@@ -38,14 +46,9 @@ const toggleNavbar = function() {
     if (navbar.classList.contains("active")) header.classList.remove("active");
 }
 
-openMenuBtn.addEventListener("click", () => {
-    
-})
 
 // Attach a "click" event listener to all nav toggler buttons.
 addEventOnElements(navTogglers, "click", toggleNavbar);
-
-
 
 
 // Selects the header element by its data attribute.
@@ -88,65 +91,3 @@ window.addEventListener("scroll" , function() {
     }
 
 });
-
-
-
-// Slider --------------------------- <<
-
-const heroslider = document.querySelector("[data-hero-slider]");
-const heroSliderItems = document.querySelectorAll("[data-hero-slider-item]");
-const heroSliderPrevBtn = document.querySelector("[data-prev-btn]");
-const heroSliderNextBtn = document.querySelector("[data-next-btn]");
-
-
-let currentSlidePos = 0;
-let lastActiveSliderItem = heroSliderItems[0];
-
-
-const updateSliderPos = function() {
-    lastActiveSliderItem.classList.remove("active");
-    heroSliderItems[currentSlidePos].classList.add("active");
-    lastActiveSliderItem = heroSliderItems[currentSlidePos];
-}
-
-const sliderNext = function() {
-    if(currentSlidePos >= heroSliderItems.length -1) {
-        currentSlidePos = 0;
-    } else {
-        currentSlidePos++;
-    }
-    updateSliderPos();
-}
-
-if(heroSliderNextBtn) heroSliderNextBtn.addEventListener("click" , sliderNext);
-
-const slidePrev = function() {
-
-    if(currentSlidePos <= 0) {
-        currentSlidePos = heroSliderItems.length -1;
-    } else {
-        currentSlidePos--;
-    }
-
-    heroSliderPrevBtn.addEventListener("click", slidePrev);
-}
-
-
-
-// Auto Slider --------------------------- <<
-
-// let autoSlideInterval;
-
-// const autoSlide = function() {
-//     autoSlideInterval = setInterval(function() {
-//         sliderNext();
-//     }, 7000);
-// }
-
-// addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseover", function() {
-//     clearInterval(autoSlideInterval);
-// });
-
-// addEventOnElements([heroSliderNextBtn, heroSliderPrevBtn], "mouseout", autoSlide );
-
-// window.addEventListener("load", autoSlide);
