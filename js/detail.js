@@ -1,26 +1,40 @@
 "use strict";
 
-import { renderSpinner } from "./utils.js";
+import { renderSpinner, getJSON } from "./utils.js";
+
 
 // import cors from "cors";
-// import "regenerator-runtime/runtime";
+// import  {async} from "regenerator-runtime/runtime";
 
 export function init() {
 
     const recipeContainer = document.querySelector("[data-detail-container]");
 
+    const customImages = [
+        "./assets/images/recipe/recipe-1.jpg",
+        "./assets/images/recipe/recipe-2.jpg",
+        "./assets/images/recipe/recipe-3.jpg",
+        "./assets/images/recipe/recipe-4.jpg",
+        "./assets/images/recipe/recipe-5.jpg",
+        "./assets/images/recipe/recipe-6.jpeg",
+        "./assets/images/recipe/recipe-7.jpeg",
+        "./assets/images/recipe/recipe-8.jpeg",
+        "./assets/images/recipe/recipe-9.jpeg",
+        "./assets/images/recipe/recipe-10.jpeg",
+        "./assets/images/recipe/recipe-11.jpeg",
+        "./assets/images/recipe/recipe-12.jpg",
+    ];
+
     const showOneRecipe = async function () {
         
         try {
 
+            const id = window.location.hash.slice(1);
+            if(!id) return;
+            
             renderSpinner(recipeContainer);
 
-            const response = await fetch("https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886");
-
-            const data = await response.json();
-
-            if(!response.ok) throw new Error (`${data.message} ${response.status}`);
-            console.log(data.data.recipe);
+            const data = await getJSON(`https://forkify-api.herokuapp.com/api/v2/recipes/${id}`);
 
             let {recipe} = data.data;
             recipe = {
@@ -29,16 +43,17 @@ export function init() {
                 servings : recipe.servings,
                 cookingTime: recipe.cooking_time,
                 ingredients: recipe.ingredients,
-                image: recipe.image_url,
+                image: customImages[Math.floor(Math.random() * customImages.length)],
                 publisher:recipe.publisher,
-                sourceUrl:recipe.source_url
             };
-            console.log(recipe);
+            
 
             const html = `
 
                 <!-- Recipe Content -->
-                
+                <figure class="recipe-detail-banner img-holder">
+                    <img class="img-cover" src="${recipe.image}" alt="" width="300" height="300" >
+                </figure>
 
                 <!-- Title and Bookmark Button -->
                 <div class="recipe-title-wrapper">

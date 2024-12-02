@@ -473,7 +473,7 @@ h2 {
 }
 
 .search-bar {
-    position: relative;
+    
   }
   
 .search-bar__input {
@@ -482,9 +482,10 @@ h2 {
     border-block-end: 1px solid var(--neutral);
     padding: 0.7rem 1rem;
     border-radius: 4px;
-    width: 13rem;
-    height: 3.5rem;
-    transition: all ease-in-out .5s; 
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out .5s;
+    
 }
   
 .search-bar__input:hover, .search-bar__input:focus {box-shadow: 0 0 1em #00000013;}
@@ -499,14 +500,13 @@ h2 {
     outline: none;
 }
   
-.search-bar__button {
+.search-bar__icon {
     border: none;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 8px;
+    right: 8px;
 }
   
-.search-bar__button:hover {cursor: pointer;}
   
 .search__icon {
     height: 1.3em;
@@ -1407,7 +1407,7 @@ h2 {
 
 .img-holder {}
 
-.recipe-detail-content {margin-block: 32px;}
+.recipe-detail-content {margin-bottom: 32px;}
 
 .recipe-title-wrapper {
     display: flex;
@@ -1415,12 +1415,14 @@ h2 {
     align-items: center;
     gap: 16px;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .recipe-title {
     font-size: 1.5rem;
     font-family: var(--font-secondary);
     font-weight: var(--font-weight-bold);
+    
    
 }
 
@@ -1560,31 +1562,42 @@ h2 {
 
 .all-recipes-header p { color: var(--secondary-dark);}
 
-.all-recipes__form {
+.all-recipes__form-search {
     width: 100%;
 }
 
+.search-bar__input-wrapper {
+    position: relative;
+    min-width: 13rem;
+    max-width: 275px;
+    height: 4rem;
+    flex-grow: 1;
+    background-color: var(--neutral-light);
+    border-radius: 4px;
+}
 
 .all-recipes__search-bar {
     padding: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 .all-recipes__search-input {
-    width: 50%;
-    height: 4rem;
+    width: 100%;
+    height: 100%;
     background-color: var(--neutral-light);
-}
-
-.all-recipes__search-btn {
-    right: 0;
-    left: -34px;
-    top: 17px;
 }
 
 .all-recipes-wrapper {
     width: 100%;
     padding: 0;
     margin-bottom: 12rem;
+}
+
+.search-bar__button{height: 4rem;}
+
+.search-bar__button:hover {
+    color: var(--secondary-light);
 }
 
 /*
@@ -1709,6 +1722,9 @@ h2 {
     }
 
     .footer__btn {height: 5rem;}
+
+    /* Details */
+    .recipe-detail-banner{height: 500px;}
 }
 
 
