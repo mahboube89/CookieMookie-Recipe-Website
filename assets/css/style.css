@@ -262,6 +262,7 @@ h2 {
     z-index: 1;
     border-radius: 4px;
 }
+.btn:hover{color: var(--secondary-light);}
 
 .btn::before {
     content: "";
@@ -271,13 +272,12 @@ h2 {
     transform: translateX(-50%);
     width: 200%;
     height: 200%;
-    /* border-radius: 50%; */
     transition:  500ms ease;
     z-index: -1;
     background-color: #395733;
 }
 
-.btn .text { transition: 250ms ease;}
+.btn .text { transition: 250ms ease; }
 
 .btn .text-2 {
     position: absolute;
@@ -295,6 +295,32 @@ h2 {
 .btn:is(:hover, :focus-visible) .text-2 {
     transform: translate(-50%, -50%);
     top: 50%;
+    
+}
+
+/* Disabled state styles */
+.btn:disabled {
+    border: 2px solid var(--neutral-dark);
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Prevent hover effects for disabled buttons */
+.btn:disabled::before {
+    display: none; /* Remove the background animation */
+}
+
+.btn:disabled .text-1,
+.btn:disabled .text-2 {
+    transform: none; /* Prevent animation on text */
+}
+
+/* Optional: Prevent accidental hover animation triggering on disabled buttons */
+.btn:disabled:hover,
+.btn:disabled:focus-visible {
+    /* background: none;  */
 }
 
 .icon-btn {
@@ -980,6 +1006,20 @@ h2 {
 }
 
 .recipe-tag:hover {background-color: var(--accent);}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.pagination-btn {}
+
+.pagination-btn {}
+
+.page-info {font-family: var(--font-light);}
 
 .recipe-card {}
 
