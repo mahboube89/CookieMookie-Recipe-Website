@@ -2,16 +2,16 @@
   "name": "delish-recipe-website",
   "version": "1.0.0",
   "description": "",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mahboube89/Delish-Recipe-Website.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Mahboubeh Ranjbar",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mahboube89/Delish-Recipe-Website/issues"

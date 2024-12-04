@@ -14,10 +14,11 @@ export function init() {
     const allRecipesList= document.querySelector(".recipe-list");
     const searchForm = document.querySelector(".all-recipes__form-search");
     const paginationContainer = document.querySelector(".pagination");
+    const message = document.querySelector(".message");
 
 
     let currentPage = 1; // Current page for pagination
-    const recipesPerPage = 12; // Number of recipes per page
+    const RECIPE_PER_PAGE = 12; // Number of recipes per page
     let currentRecipes = []; // Array to store the current set of recipes
     
 
@@ -50,13 +51,13 @@ export function init() {
     const renderPage = (recipes, page) => {
 
         // Get recipes for the current page using pagination
-        const paginatedRecipes = paginate(recipes, page, recipesPerPage);
+        const paginatedRecipes = paginate(recipes, page, RECIPE_PER_PAGE);
 
         // Render the recipes for the current page
         renderRecipes(paginatedRecipes, allRecipesList);
 
         // Calculate the total number of pages
-        const totalPages = Math.ceil(recipes.length / recipesPerPage);
+        const totalPages = Math.ceil(recipes.length / RECIPE_PER_PAGE);
 
         // Update pagination buttons and handle page change
         updatePaginationButtons(page, totalPages, paginationContainer, (newPage) => {
@@ -93,16 +94,27 @@ export function init() {
                 tag: tags[Math.floor(Math.random() * tags.length)], // Random tag
             }));
             
+            // Check if there are any recipes; otherwise, show fallback
+            if (currentRecipes.length === 0) {
+                throw new Error(`No recipes found for "${query}".`);
+            }
+            
             currentPage = 1; // Reset to the first page and render results
             renderPage(currentRecipes, currentPage);
             
         } catch (error) {
-            console.log(error.message);
-            console.log("No recipes found. Try another search!");
+
+            // Display a temporary message to the user
+            message.textContent = "No recipes found. Try another search!";
+            setTimeout(() => {
+                message.textContent = ""; // Clear the message after 2 seconds
+                searchForm.querySelector(".search-bar__input").value = ""; // Clear the input field
+            }, 3000);
             
             // Fallback to the default recipes if no results are found
-            currentRecipes = allRecipesData;
-            renderPage(currentRecipes, currentPage);
+            await fetchDefaultRecipes();  // Fetch the default recipes
+            currentPage = 1; // Reset to the first page
+            renderPage(currentRecipes, currentPage); // Render the default recipes
         }
     }
 
@@ -132,7 +144,7 @@ export function init() {
         currentPage = 1; // Reset to the first page
 
         loadSearchResults(query);  // Fetch and display search results
-        searchForm.querySelector(".search-bar__input").value = ""; // Clear the input field
+        
     });
 
 
