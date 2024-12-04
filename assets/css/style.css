@@ -1499,6 +1499,33 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
+.recipe-stats-serving {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    border-right: 1px solid var(--neutral-light);
+    width: 100%;
+}
+
+.recipe-stats-serving-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.recipe-serving-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.btn_update-serving { margin-bottom: -1rem;}
+
+
+
+
+
 .recipe-tags {
     display: flex;
     flex-wrap: wrap;
