@@ -1,11 +1,18 @@
 "use strict";
 
 
-// Render recipes to the container
+/**
+ * Renders a list of recipes into a given container element.
+ * 
+ * @param {Array} recipes - Array of recipe objects to render.
+ * @param {HTMLElement} container - DOM element where the recipes will be displayed.
+ */
 export const renderRecipes = function (recipes, container) {
 
+    // Clear any existing content in the container
     container.innerHTML = "";
 
+    // Generate HTML for each recipe and combine them into a single string
     const recipeHtml = recipes.map((recipe) => 
     `
         <li class="recipe-list-item"> 
@@ -78,13 +85,22 @@ export const renderRecipes = function (recipes, container) {
     
     `).join("");
 
+    // Insert the generated HTML into the container
     container.insertAdjacentHTML("afterbegin", recipeHtml);
 };
 
 
 
-// Update pagination buttons
+/**
+ * Updates pagination buttons and adds event listeners for navigation.
+ * 
+ * @param {number} currentPage - The current page number.
+ * @param {number} totalPages - The total number of pages.
+ * @param {HTMLElement} container - DOM element where the pagination buttons will be rendered.
+ */
 export const updatePaginationButtons = (currentPage, totalPages, container) => {
+
+    // Render Prev and Next buttons along with page info
     container.innerHTML = `
       <button class="btn pagination-btn" ${currentPage === 1 ? "disabled" : ""} data-page="${currentPage - 1}">Prev</button>
       <span class="page-info">Page ${currentPage} of ${totalPages}</span>
@@ -94,20 +110,33 @@ export const updatePaginationButtons = (currentPage, totalPages, container) => {
     const prevBtn = container.querySelector(".prev-btn");
     const nextBtn = container.querySelector(".next-btn");
 
-    // Add event listeners for Prev and Next buttons
+    // Add event listener for the Previous button if it exists and is not disabled
     if (prevBtn && !prevBtn.disabled) {
         prevBtn.addEventListener("click", () => paginateCallback(currentPage - 1));
     }
 
+    // Add event listener for the Next button if it exists and is not disabled
     if (nextBtn && !nextBtn.disabled) {
         nextBtn.addEventListener("click", () => paginateCallback(currentPage + 1));
     }
 };
   
-// Paginate recipes
+
+/**
+ * Returns a subset of recipes for the current page based on pagination parameters.
+ * 
+ * @param {Array} recipes - Array of all recipes.
+ * @param {number} currentPage - The current page number.
+ * @param {number} recipesPerPage - Number of recipes to display per page.
+ * @returns {Array} - A subset of recipes for the specified page.
+ */
 export const paginate = (recipes, currentPage, recipesPerPage) => {
+
+    // Calculate the start and end indices for the recipes to display
     const start = (currentPage - 1) * recipesPerPage;
     const end = currentPage * recipesPerPage;
+
+    // Return the sliced array of recipes for the current page
     return recipes.slice(start, end);
 };
 

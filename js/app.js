@@ -4,19 +4,32 @@ import { addEventOnElements } from "./utils.js";
 
 
 
-// Detect current page
+// Get the current page from the `data-page` attribute on the <body> element
 const currentPage = document.body.dataset.page;
 
+
+
+/**
+ * Dynamically import and initialize the JavaScript file corresponding to the current page.
+ * This approach ensures that only the necessary code for the active page is loaded,
+ * improving performance and reducing unnecessary script loads.
+ */
+
+// Check if the current page is the index page
 if (currentPage === "index") {
 
+    // Dynamically import the module for the index page and call its `init` function
     import("./index.js").then((module) => module.init());
 
 } else if (currentPage === "recipes") {
 
+    // Dynamically import the module for the recipes page and call its `init` function
     import("./recipes.js").then((module) => module.init());
 
+    // Check if the current page is the detail page
 } else if (currentPage === "detail") {
     
+    // Dynamically import the module for the detail page and call its `init` function
     import("./detail.js").then((module) => module.init());
 }
 

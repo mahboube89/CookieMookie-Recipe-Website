@@ -8,11 +8,17 @@
  */
 export const addEventOnElements = function( elements, eventType, callback) {
     elements.forEach((element) => {
-        element.addEventListener(eventType, callback);
+        element.addEventListener(eventType, callback); // Add event listener to the current element
     });
 }
 
-
+/**
+ * Displays a spinner inside a specified parent element.
+ * @param {HTMLElement} parentElement - The element to render the spinner in.
+ *
+ * This function clears the current content of the parent element and appends
+ * a spinner (loading indicator) to visually indicate that a process is ongoing.
+ */
 export const renderSpinner = function(parentElement) {
     const html = `
     <div class="spinner">
@@ -29,31 +35,51 @@ export const renderSpinner = function(parentElement) {
     </div>
     `;
 
-    parentElement.innerHtml = "";
-    parentElement.insertAdjacentHTML("afterbegin", html)
+    parentElement.innerHtml = ""; // Clear the current content
+    parentElement.insertAdjacentHTML("afterbegin", html); // Insert the spinner HTML
 }
 
 
+/**
+ * Creates a promise that rejects after a specified number of seconds.
+ * @param {number} s - The number of seconds before the promise rejects.
+ * @returns {Promise} A promise that rejects with an error message after the timeout.
+ *
+ * This function is used to limit how long a request can take before being automatically canceled.
+ */
 const timeout = function(s) {
     return new Promise(function(_, reject){
         setTimeout(() => {
             reject(new Error(`Request took too long! Timeout after ${s} second.`));
-        }, s * 1000);
+        }, s * 1000); // Convert seconds to milliseconds
     })
 }
 
 
-
+/**
+ * Fetches JSON data from a specified URL and handles timeouts.
+ * @param {string} url - The URL to fetch data from.
+ * @returns {Promise<object>} A promise that resolves with the fetched data.
+ *
+ * This function uses `Promise.race` to race between a fetch request and a timeout promise,
+ * ensuring that the request doesn't hang indefinitely. If the request is successful,
+ * it parses and returns the JSON data. If there's an error, it throws the error.
+ */
 export const getJSON = async function(url) {
     try {
         
+        // Race between the fetch request and the timeout
         const response = await Promise.race([fetch(url),timeout(10)]) ;
+
+        // Parse the JSON data
         const data = await response.json();
+
+        // If the response status is not OK, throw an error
         if(!response.ok) throw new Error(`${data.message}${data.status}`);
 
-        return data;
+        return data; // Return the parsed data
 
     } catch (error) {
-        throw error;
+        throw error; // Re-throw the error to be handled by the caller
     }
 }
