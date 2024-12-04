@@ -277,7 +277,7 @@ h2 {
     height: 200%;
     transition:  500ms ease;
     z-index: -1;
-    background-color: var(--neutral);
+    background-color: var(--neutral-light);
 }
 
 .btn .text { transition: 250ms ease; }
@@ -564,8 +564,94 @@ h2 {
     display: flex;
     align-items: center;
     gap: 2rem;
+    position: relative;
 }
 
+.profile {
+    border: 2px solid var(--secondary-dark);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown_wrapper {
+    position: absolute;
+    background-color: var(--neutral-light);
+    border: 1px solid var(--neutral);
+    width: 19rem;
+    top: 14rem;
+    left: 2rem;
+    border-radius: 4px;
+    padding-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    animation: fadeOutAnimation  ease-in-out 0.3s forwards;
+    z-index: 1;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+
+    & ul {
+        
+        & li {
+            height: 3rem;
+            cursor: pointer;
+            width: 100%;
+            padding-left: 3rem;
+            transition: all 0.2s ease-in-out;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        & li:hover {
+            color: var(--secondary-dark);
+        }
+    }
+}
+
+.dropdown_wrapper--fade-in {
+    animation: fadeInAnimation ease-in-out 0.3s forwards;
+}
+
+.none {display: none;}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeOutAnimation  ease-in-out 0.3s forwards;
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.sign-out {
+    margin: 0 auto;
+}
 .header__actions .bookmark,
 .header__actions .add-recipe {
     display: flex;
@@ -610,6 +696,7 @@ h2 {
 }
 
 .navbar.active {
+    height: 30rem;
     max-height: 40rem;
     visibility: visible;
     transition-duration: 0.5s;

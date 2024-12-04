@@ -34,6 +34,34 @@ if (currentPage === "index") {
 }
 
 
+// Show Profile--------------------------- <<
+
+// Select profile and dropdown elements
+const profile = document.querySelector(".profile");
+const dropdown = document.querySelector(".dropdown_wrapper");
+
+// Toggle dropdown visibility when profile is clicked
+profile.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent event from propagating to document
+    dropdown.classList.toggle("none");
+    dropdown.classList.toggle("hide");
+    dropdown.classList.remove("dropdown_wrapper--fade-in");
+});
+
+// Hide dropdown if clicked outside
+document.addEventListener("click", (event) => {
+    const isClickInsideDropdown = dropdown.contains(event.target);
+    const isProfileClicked = profile.contains(event.target);
+
+    if(!isClickInsideDropdown && !isProfileClicked) {
+        dropdown.classList.add("none");
+        dropdown.classList.remove("hide");
+        dropdown.classList.add("dropdown_wrapper--fade-in");
+    }
+});
+
+
+
 // Navbar --------------------------- <<
 
 // Selects the navbar, toggler buttons, and overlay elements by their data attributes.
@@ -81,7 +109,7 @@ const hideHeader = function() {
     const isScrollButtom = lastScrollPos < window.scrollY; 
 
     if(isScrollButtom) {
-        header.classList.add("hide");  // Hide the header
+        header.classList.add("hide");  // Hide the header       
     }
     else {
         header.classList.remove("hide");  // Show the header
@@ -104,3 +132,4 @@ window.addEventListener("scroll" , function() {
     }
 
 });
+
