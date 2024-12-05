@@ -1,3 +1,8 @@
+/**
+ * Copyright 2024 https://github.com/mahboube89
+ * Licensed under the MIT License;
+*/
+
 "use strict";
 
 import { addEventOnElements } from "./utils.js";
@@ -42,10 +47,10 @@ const dropdown = document.querySelector(".dropdown_wrapper");
 
 // Toggle dropdown visibility when profile is clicked
 profile.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent event from propagating to document
-    dropdown.classList.toggle("none");
+    //event.stopPropagation(); // Prevent event from propagating to document
+    dropdown.classList.remove("none");
     dropdown.classList.toggle("hide");
-    dropdown.classList.remove("dropdown_wrapper--fade-in");
+    dropdown.classList.toggle("dropdown_wrapper--fade-in");
 });
 
 // Hide dropdown if clicked outside

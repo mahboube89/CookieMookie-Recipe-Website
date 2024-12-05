@@ -1,3 +1,7 @@
+/**
+ * Copyright 2024 https://github.com/mahboube89
+ * Licensed under the MIT License;
+*/
 
 "use strict";
 
