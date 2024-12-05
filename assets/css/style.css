@@ -245,7 +245,7 @@ h2 {
 }
 
 .subtitle--section::after {
-    content: url("../images/separator.svg");
+    content: url("../../images/separator.svg");
     display: block;
     width: 72px;
     margin-inline: auto;
@@ -436,7 +436,7 @@ h2 {
 
 .card-img-holder {
     background-color: var(--neutral-light);
-    background-image: url("../images/image-placeholder.jpg");
+    background-image: url("../../images/image-placeholder.jpg");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: center;
@@ -863,7 +863,7 @@ h2 {
 }
 
 .navbar.active::before {
-    content: url("../images/separator.svg");
+    content: url("../../images/separator.svg");
     display: block;
     width: 72px;
     margin-inline: auto;
@@ -1216,7 +1216,7 @@ h2 {
 */
 
 .meal-options {
-    background-image: url("../images/img-pattern.svg");
+    background-image: url("../../images/img-pattern.svg");
     background-repeat: repeat;
     width: 100%;
     overflow: hidden;
@@ -1651,7 +1651,7 @@ h2 {
     padding-inline: 2rem;
     -webkit-margin-after: 24px;
             margin-block-end: 24px;
-    background-image: url(../images/img-pattern.svg);
+    background-image: url("../../images/img-pattern.svg");
     background-repeat: repeat;
     background-position:center; 
     overflow: hidden;
@@ -1735,7 +1735,7 @@ h2 {
     top: -3rem;
     left:0;
     right: 0;
-    content: url(../images/separator.svg);
+    content: url("../../images/separator.svg");
     display: block;
     width: 72px;
     margin-inline: auto;
@@ -1784,7 +1784,7 @@ h2 {
 
 .footer__text::after,
 .footer__newsletter-title::before {
-    content: url(../images/separator.svg);
+    content: url("../../images/separator.svg");
     display: block;
     width: 72px;
     margin-inline: auto;
