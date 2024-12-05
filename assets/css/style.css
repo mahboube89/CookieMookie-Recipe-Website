@@ -2332,7 +2332,8 @@ h2 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        gap: 3rem;
+        gap: 6rem;
+        margin-right: 12rem;
     }
 
     .navbar .separator {display: none;}
@@ -2401,6 +2402,8 @@ h2 {
 
     /* Header */
     .navbar { margin-inline: auto;}
+
+    .navbar-list {gap: 12rem;}
 
     /* Latest Recipe */
     .recipe-list {
