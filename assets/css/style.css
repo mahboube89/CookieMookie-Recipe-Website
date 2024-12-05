@@ -856,7 +856,7 @@ h2 {
 }
 
 .navbar.active {
-    height: 30rem;
+    height: 26rem;
     max-height: 40rem;
     visibility: visible;
     -webkit-transition-duration: 0.5s;
@@ -1939,8 +1939,8 @@ h2 {
 .recipe-stats {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(4 , 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3 , 1fr);
     margin-top: 1.5rem;
     font-family: var(--font-secondary);
 }
