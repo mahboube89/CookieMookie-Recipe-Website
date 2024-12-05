@@ -1282,7 +1282,7 @@ h2 {
     -o-transition: background-color 300ms ease;
     transition: background-color 300ms ease;
     border-radius: 4px;
-    width: 118px;
+    width: 112px;
 }
 
 .meal-item:hover .meal-icon-wrapper {
@@ -1317,7 +1317,7 @@ h2 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     height: 3em; /* Fixed height for uniformity */
     overflow: hidden; /* Hide overflow text */
     -o-text-overflow: ellipsis;
@@ -2157,7 +2157,6 @@ h2 {
 
 .search-bar__button{height: 4rem;}
 
-.search-bar__button:hover {color: var(--secondary-light);}
 
 /*
 ===================

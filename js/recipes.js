@@ -5,6 +5,202 @@
 
 "use strict"
 
+const defaultRecipesData = [
+    {
+      "id": "664c8f193e7aa067e94e8639",
+      "title": "Quick & Easy Breakfast",
+      "image": "./assets/images/recipe/recipe-1.jpg",
+      "cookingTime": 15,
+      "servings": 2,
+      "tag": "Breakfast"
+    },
+    {
+      "id": "664c8f193e7aa067e94e86f8",
+      "title": "Delicious Pasta",
+      "image": "./assets/images/recipe/recipe-2.jpg",
+      "cookingTime": 30,
+      "servings": 4,
+      "tag": "Lunch"
+    },
+    {
+      "id": "5ed6604591c37cdc054bc886",
+      "title": "Healthy Smoothie",
+      "image": "./assets/images/recipe/recipe-3.jpg",
+      "cookingTime": 10,
+      "servings": 1,
+      "tag": "Beverage"
+    },
+    {
+      "id": "5ed6604591c37cdc054bc886",
+      "title": "Classic Caesar Salad",
+      "image": "./assets/images/recipe/recipe-4.jpg",
+      "cookingTime": 20,
+      "servings": 3,
+      "tag": "Salad"
+    },
+    {
+      "id": "664c8f193e7aa067e94e859d",
+      "title": "Chocolate Chip Cookies",
+      "image": "./assets/images/recipe/recipe-5.jpg",
+      "cookingTime": 25,
+      "servings": 6,
+      "tag": "Dessert"
+    },
+    {
+      "id":"664c8f193e7aa067e94e8335",
+      "title": "Grilled Cheese Sandwich",
+      "image": "./assets/images/recipe/recipe-6.jpeg",
+      "cookingTime": 10,
+      "servings": 1,
+      "tag": "Snack"
+    },
+    {
+      "id": "664c8f193e7aa067e94e832e",
+      "title": "Creamy Tomato Soup",
+      "image": "./assets/images/recipe/recipe-7.jpeg",
+      "cookingTime": 35,
+      "servings": 4,
+      "tag": "Soup"
+    },
+    {
+      "id": "664c8f193e7aa067e94e88b3",
+      "title": "Vegetarian Pizza",
+      "image": "./assets/images/recipe/recipe-8.jpeg",
+      "cookingTime": 40,
+      "servings": 8,
+      "tag": "Dinner"
+    },
+    {
+      "id": "664c8f193e7aa067e94e866d",
+      "title": "Avocado Toast",
+      "image": "./assets/images/recipe/recipe-9.jpeg",
+      "cookingTime": 5,
+      "servings": 1,
+      "tag": "Breakfast"
+    },
+    {
+      "id": "664c8f193e7aa067e94e88b3",
+      "title": "Tropical Fruit Salad",
+      "image": "./assets/images/recipe/recipe-10.jpeg",
+      "cookingTime": 15,
+      "servings": 2,
+      "tag": "Snack"
+    },
+    {
+      "id": "664c8f193e7aa067e94e866d",
+      "title": "Spicy Tacos",
+      "image": "./assets/images/recipe/recipe-11.jpeg",
+      "cookingTime": 25,
+      "servings": 3,
+      "tag": "Lunch"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8ae8",
+      "title": "Garlic Butter Shrimp",
+      "image": "./assets/images/recipe/recipe-12.jpg",
+      "cookingTime": 20,
+      "servings": 2,
+      "tag": "Dinner"
+    },
+    {
+      "id": "664c8f193e7aa067e94e876a",
+      "title": "Classic Pancakes",
+      "image": "./assets/images/recipe/recipe-1.jpg",
+      "cookingTime": 20,
+      "servings": 4,
+      "tag": "Breakfast"
+    },
+    {
+      "id": "664c8f193e7aa067e94e89a3",
+      "title": "Chicken Caesar Wrap",
+      "image": "./assets/images/recipe/recipe-2.jpg",
+      "cookingTime": 15,
+      "servings": 2,
+      "tag": "Lunch"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8a4b",
+      "title": "Berry Parfait",
+      "image": "./assets/images/recipe/recipe-3.jpg",
+      "cookingTime": 10,
+      "servings": 1,
+      "tag": "Dessert"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8a4b",
+      "title": "Spaghetti Carbonara",
+      "image": "./assets/images/recipe/recipe-4.jpg",
+      "cookingTime": 25,
+      "servings": 4,
+      "tag": "Dinner"
+    },
+    {
+      "id":"664c8f193e7aa067e94e8335",
+      "title": "Green Smoothie",
+      "image": "./assets/images/recipe/recipe-5.jpg",
+      "cookingTime": 30,
+      "servings": 4,
+      "tag": "Vegetarian"
+    },
+    {
+      "id": "664c8f193e7aa067e94e832e",
+      "title": "Grilled Chicken Salad",
+      "image": "./assets/images/recipe/recipe-6.jpeg",
+      "cookingTime": 20,
+      "servings": 3,
+      "tag": "Healthy"
+    },
+    {
+      "id": "664c8f193e7aa067e94e88b3",
+      "title": "Beef Burger",
+      "image": "./assets/images/recipe/recipe-7.jpeg",
+      "cookingTime": 20,
+      "servings": 2,
+      "tag": "Snack"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8a8d",
+      "title": "Pumpkin Pie",
+      "image": "./assets/images/recipe/recipe-8.jpeg",
+      "cookingTime": 50,
+      "servings": 6,
+      "tag": "Dessert"
+    },
+    {
+      "id": "664c8f193e7aa067e94e83ac",
+      "title": "Creamy Mashed Potatoes",
+      "image": "./assets/images/recipe/recipe-9.jpeg",
+      "cookingTime": 30,
+      "servings": 4,
+      "tag": "Side Dish"
+    },
+    {
+      "id":"664c8f193e7aa067e94e8a4b",
+      "title": "Roasted Vegetables",
+      "image": "./assets/images/recipe/recipe-10.jpeg",
+      "cookingTime": 35,
+      "servings": 3,
+      "tag": "Vegan"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8aa8",
+      "title": "Mango Salsa",
+      "image": "./assets/images/recipe/recipe-11.jpeg",
+      "cookingTime": 15,
+      "servings": 2,
+      "tag": "Snack"
+    },
+    {
+      "id": "664c8f193e7aa067e94e8603",
+      "title": "Baked Ziti",
+      "image": "./assets/images/recipe/recipe-12.jpg",
+      "cookingTime": 45,
+      "servings": 5,
+      "tag": "Dinner"
+    }
+];
+  
+
 
 import { renderSpinner, getJSON } from "./utils.js";
 import { renderRecipes, updatePaginationButtons, paginate } from "./recipeHelpers.js";
@@ -26,27 +222,6 @@ export function init() {
     const RECIPE_PER_PAGE = 12; // Number of recipes per page
     let currentRecipes = []; // Array to store the current set of recipes
     
-
-    /**
-     * Fetches default recipes from a local JSON file.
-     * This function retrieves recipes for initial display on page load.
-     */
-    const fetchDefaultRecipes = async () => {
-        try {
-        const response = await fetch("./assets/data/defaultRecipesData.json");
-
-        // Check if the response is OK; throw an error if not
-        if (!response.ok) throw new Error("Failed to load default recipes");
-
-        // Parse and store recipes
-        const data = await response.json();
-        currentRecipes = data; // Set as the default set of recipes
-
-        } catch (error) {
-        console.log("Error fetching default recipes:", error.message);
-        }
-    };
-
 
     /**
      * Renders the recipes for the current page and updates pagination buttons.
@@ -117,7 +292,7 @@ export function init() {
             }, 3000);
             
             // Fallback to the default recipes if no results are found
-            await fetchDefaultRecipes();  // Fetch the default recipes
+            currentRecipes = defaultRecipesData;
             currentPage = 1; // Reset to the first page
             renderPage(currentRecipes, currentPage); // Render the default recipes
         }
@@ -157,8 +332,9 @@ export function init() {
      * Initializes the page by loading and displaying default recipes on page load.
      */
     window.addEventListener("load", async () => {
-        await fetchDefaultRecipes(); // Fetch the default recipes
-        renderPage(currentRecipes, currentPage); // Display recipes for the first page
+        currentRecipes = defaultRecipesData;
+        currentPage = 1; // Reset to the first page
+        renderPage(currentRecipes, currentPage); // Render the default recipes
     });
     
 }
