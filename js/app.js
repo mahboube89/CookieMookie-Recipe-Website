@@ -45,10 +45,15 @@ if (currentPage === "index") {
 const profile = document.querySelector(".profile");
 const dropdown = document.querySelector(".dropdown_wrapper");
 
+// Ensure dropdown is hidden on page load
+window.addEventListener("DOMContentLoaded", () => {
+    dropdown.classList.add("hide");
+    dropdown.classList.remove("dropdown_wrapper--fade-in");
+});
+
 // Toggle dropdown visibility when profile is clicked
 profile.addEventListener("click", (event) => {
     //event.stopPropagation(); // Prevent event from propagating to document
-    dropdown.classList.remove("none");
     dropdown.classList.toggle("hide");
     dropdown.classList.toggle("dropdown_wrapper--fade-in");
 });
@@ -59,9 +64,8 @@ document.addEventListener("click", (event) => {
     const isProfileClicked = profile.contains(event.target);
 
     if(!isClickInsideDropdown && !isProfileClicked) {
-        dropdown.classList.add("none");
-        dropdown.classList.remove("hide");
-        dropdown.classList.add("dropdown_wrapper--fade-in");
+        dropdown.classList.add("hide");
+        dropdown.classList.remove("dropdown_wrapper--fade-in");
     }
 });
 

@@ -702,9 +702,7 @@ h2 {
     left: 2rem;
     border-radius: 4px;
     padding-block: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -744,11 +742,15 @@ h2 {
 }
 
 .dropdown_wrapper--fade-in {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
     -webkit-animation: fadeInAnimation ease-in-out 0.3s forwards;
             animation: fadeInAnimation ease-in-out 0.3s forwards;
 }
 
-.dropdown_wrapper .none {display: none;}
 
 .dropdown_wrapper .hide {
     opacity: 0;
@@ -759,45 +761,45 @@ h2 {
 
 @-webkit-keyframes fadeOutAnimation {
     0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    100% {
         opacity: 1;
         visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
 @keyframes fadeOutAnimation {
     0% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    100% {
         opacity: 1;
         visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
 @-webkit-keyframes fadeInAnimation {
     0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    100% {
         opacity: 0;
         visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
 @keyframes fadeInAnimation {
     0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    100% {
         opacity: 0;
         visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
     }
 }
 
