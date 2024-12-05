@@ -9,7 +9,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8639",
       "title": "Quick & Easy Breakfast",
-      "image": "./assets/images/recipe/recipe-1.jpg",
+      "image": "./images/recipe/recipe-1.jpg",
       "cookingTime": 15,
       "servings": 2,
       "tag": "Breakfast"
@@ -17,7 +17,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e86f8",
       "title": "Delicious Pasta",
-      "image": "./assets/images/recipe/recipe-2.jpg",
+      "image": "./images/recipe/recipe-2.jpg",
       "cookingTime": 30,
       "servings": 4,
       "tag": "Lunch"
@@ -25,7 +25,7 @@ const defaultRecipesData = [
     {
       "id": "5ed6604591c37cdc054bc886",
       "title": "Healthy Smoothie",
-      "image": "./assets/images/recipe/recipe-3.jpg",
+      "image": "./images/recipe/recipe-3.jpg",
       "cookingTime": 10,
       "servings": 1,
       "tag": "Beverage"
@@ -33,7 +33,7 @@ const defaultRecipesData = [
     {
       "id": "5ed6604591c37cdc054bc886",
       "title": "Classic Caesar Salad",
-      "image": "./assets/images/recipe/recipe-4.jpg",
+      "image": "./images/recipe/recipe-4.jpg",
       "cookingTime": 20,
       "servings": 3,
       "tag": "Salad"
@@ -41,7 +41,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e859d",
       "title": "Chocolate Chip Cookies",
-      "image": "./assets/images/recipe/recipe-5.jpg",
+      "image": "./images/recipe/recipe-5.jpg",
       "cookingTime": 25,
       "servings": 6,
       "tag": "Dessert"
@@ -49,7 +49,7 @@ const defaultRecipesData = [
     {
       "id":"664c8f193e7aa067e94e8335",
       "title": "Grilled Cheese Sandwich",
-      "image": "./assets/images/recipe/recipe-6.jpeg",
+      "image": "./images/recipe/recipe-6.jpeg",
       "cookingTime": 10,
       "servings": 1,
       "tag": "Snack"
@@ -57,7 +57,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e832e",
       "title": "Creamy Tomato Soup",
-      "image": "./assets/images/recipe/recipe-7.jpeg",
+      "image": "./images/recipe/recipe-7.jpeg",
       "cookingTime": 35,
       "servings": 4,
       "tag": "Soup"
@@ -65,7 +65,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e88b3",
       "title": "Vegetarian Pizza",
-      "image": "./assets/images/recipe/recipe-8.jpeg",
+      "image": "./images/recipe/recipe-8.jpeg",
       "cookingTime": 40,
       "servings": 8,
       "tag": "Dinner"
@@ -73,7 +73,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e866d",
       "title": "Avocado Toast",
-      "image": "./assets/images/recipe/recipe-9.jpeg",
+      "image": "./images/recipe/recipe-9.jpeg",
       "cookingTime": 5,
       "servings": 1,
       "tag": "Breakfast"
@@ -81,7 +81,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e88b3",
       "title": "Tropical Fruit Salad",
-      "image": "./assets/images/recipe/recipe-10.jpeg",
+      "image": "./images/recipe/recipe-10.jpeg",
       "cookingTime": 15,
       "servings": 2,
       "tag": "Snack"
@@ -89,7 +89,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e866d",
       "title": "Spicy Tacos",
-      "image": "./assets/images/recipe/recipe-11.jpeg",
+      "image": "./images/recipe/recipe-11.jpeg",
       "cookingTime": 25,
       "servings": 3,
       "tag": "Lunch"
@@ -97,7 +97,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8ae8",
       "title": "Garlic Butter Shrimp",
-      "image": "./assets/images/recipe/recipe-12.jpg",
+      "image": "./images/recipe/recipe-12.jpg",
       "cookingTime": 20,
       "servings": 2,
       "tag": "Dinner"
@@ -105,7 +105,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e876a",
       "title": "Classic Pancakes",
-      "image": "./assets/images/recipe/recipe-1.jpg",
+      "image": "./images/recipe/recipe-1.jpg",
       "cookingTime": 20,
       "servings": 4,
       "tag": "Breakfast"
@@ -113,7 +113,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e89a3",
       "title": "Chicken Caesar Wrap",
-      "image": "./assets/images/recipe/recipe-2.jpg",
+      "image": "./images/recipe/recipe-2.jpg",
       "cookingTime": 15,
       "servings": 2,
       "tag": "Lunch"
@@ -121,7 +121,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8a4b",
       "title": "Berry Parfait",
-      "image": "./assets/images/recipe/recipe-3.jpg",
+      "image": "./images/recipe/recipe-3.jpg",
       "cookingTime": 10,
       "servings": 1,
       "tag": "Dessert"
@@ -129,7 +129,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8a4b",
       "title": "Spaghetti Carbonara",
-      "image": "./assets/images/recipe/recipe-4.jpg",
+      "image": "./images/recipe/recipe-4.jpg",
       "cookingTime": 25,
       "servings": 4,
       "tag": "Dinner"
@@ -137,7 +137,7 @@ const defaultRecipesData = [
     {
       "id":"664c8f193e7aa067e94e8335",
       "title": "Green Smoothie",
-      "image": "./assets/images/recipe/recipe-5.jpg",
+      "image": "./images/recipe/recipe-5.jpg",
       "cookingTime": 30,
       "servings": 4,
       "tag": "Vegetarian"
@@ -145,7 +145,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e832e",
       "title": "Grilled Chicken Salad",
-      "image": "./assets/images/recipe/recipe-6.jpeg",
+      "image": "./images/recipe/recipe-6.jpeg",
       "cookingTime": 20,
       "servings": 3,
       "tag": "Healthy"
@@ -153,7 +153,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e88b3",
       "title": "Beef Burger",
-      "image": "./assets/images/recipe/recipe-7.jpeg",
+      "image": "./images/recipe/recipe-7.jpeg",
       "cookingTime": 20,
       "servings": 2,
       "tag": "Snack"
@@ -161,7 +161,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8a8d",
       "title": "Pumpkin Pie",
-      "image": "./assets/images/recipe/recipe-8.jpeg",
+      "image": "./images/recipe/recipe-8.jpeg",
       "cookingTime": 50,
       "servings": 6,
       "tag": "Dessert"
@@ -169,7 +169,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e83ac",
       "title": "Creamy Mashed Potatoes",
-      "image": "./assets/images/recipe/recipe-9.jpeg",
+      "image": "./images/recipe/recipe-9.jpeg",
       "cookingTime": 30,
       "servings": 4,
       "tag": "Side Dish"
@@ -177,7 +177,7 @@ const defaultRecipesData = [
     {
       "id":"664c8f193e7aa067e94e8a4b",
       "title": "Roasted Vegetables",
-      "image": "./assets/images/recipe/recipe-10.jpeg",
+      "image": "./images/recipe/recipe-10.jpeg",
       "cookingTime": 35,
       "servings": 3,
       "tag": "Vegan"
@@ -185,7 +185,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8aa8",
       "title": "Mango Salsa",
-      "image": "./assets/images/recipe/recipe-11.jpeg",
+      "image": "./images/recipe/recipe-11.jpeg",
       "cookingTime": 15,
       "servings": 2,
       "tag": "Snack"
@@ -193,7 +193,7 @@ const defaultRecipesData = [
     {
       "id": "664c8f193e7aa067e94e8603",
       "title": "Baked Ziti",
-      "image": "./assets/images/recipe/recipe-12.jpg",
+      "image": "./images/recipe/recipe-12.jpg",
       "cookingTime": 45,
       "servings": 5,
       "tag": "Dinner"
