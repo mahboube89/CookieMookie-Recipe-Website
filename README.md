@@ -48,6 +48,7 @@ The project integrates with the [Forkify API](https://forkify-api.herokuapp.com/
 ### Screenshots
 
 ![screenshot-1](./images/screenshots/home-page.png)
+![screenshot-1](./images/screenshots/home-page-mobile.png)
 ![screenshot-2](./images/screenshots/recipes-page.png)
 ![screenshot-3](./images/screenshots/details-page.png)
 
