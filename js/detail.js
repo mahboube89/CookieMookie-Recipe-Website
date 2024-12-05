@@ -164,11 +164,6 @@ export function init() {
                         <span class="subtitle">Ingredients</span>
                     </div>
 
-                    <div class="recipe-stats-item">
-                        <p class="stats-value" >345</p>
-                        <span class="subtitle">Calories</span>
-                    </div>
-
                 </div>
 
                 <!-- Recipe Tags -->
