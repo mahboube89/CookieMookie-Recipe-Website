@@ -5,6 +5,19 @@
 
 "use strict";
 
+import recipeImage1 from '../images/recipe/recipe-1.jpg';
+import recipeImage2 from '../images/recipe/recipe-2.jpg';
+import recipeImage3 from '../images/recipe/recipe-3.jpg';
+import recipeImage4 from '../images/recipe/recipe-4.jpg';
+import recipeImage5 from '../images/recipe/recipe-5.jpg';
+import recipeImage6 from '../images/recipe/recipe-6.jpeg';
+import recipeImage7 from '../images/recipe/recipe-7.jpeg';
+import recipeImage8 from '../images/recipe/recipe-8.jpeg';
+import recipeImage9 from '../images/recipe/recipe-9.jpeg';
+import recipeImage10 from '../images/recipe/recipe-10.jpeg';
+import recipeImage11 from '../images/recipe/recipe-11.jpeg';
+import recipeImage12 from '../images/recipe/recipe-12.jpg';
+
 import { renderSpinner, getJSON } from "./utils.js";
 
 // import cors from "cors";
@@ -17,18 +30,18 @@ export function init() {
 
     // List of custom images to be displayed with recipes
     const customImages = [
-        "./images/recipe/recipe-1.jpg",
-        "./images/recipe/recipe-2.jpg",
-        "./images/recipe/recipe-3.jpg",
-        "./images/recipe/recipe-4.jpg",
-        "./images/recipe/recipe-5.jpg",
-        "./images/recipe/recipe-6.jpeg",
-        "./images/recipe/recipe-7.jpeg",
-        "./images/recipe/recipe-8.jpeg",
-        "./images/recipe/recipe-9.jpeg",
-        "./images/recipe/recipe-10.jpeg",
-        "./images/recipe/recipe-11.jpeg",
-        "./images/recipe/recipe-12.jpg",
+        recipeImage1,
+        recipeImage2,
+        recipeImage3,
+        recipeImage4,
+        recipeImage5,
+        recipeImage6,
+        recipeImage7,
+        recipeImage8,
+        recipeImage9,
+        recipeImage10,
+        recipeImage11,
+        recipeImage12
     ];
 
     // Variable to hold the current recipe data
