@@ -17,18 +17,18 @@ export function init() {
 
     // List of custom images to be displayed with recipes
     const customImages = [
-        "./assets/images/recipe/recipe-1.jpg",
-        "./assets/images/recipe/recipe-2.jpg",
-        "./assets/images/recipe/recipe-3.jpg",
-        "./assets/images/recipe/recipe-4.jpg",
-        "./assets/images/recipe/recipe-5.jpg",
-        "./assets/images/recipe/recipe-6.jpeg",
-        "./assets/images/recipe/recipe-7.jpeg",
-        "./assets/images/recipe/recipe-8.jpeg",
-        "./assets/images/recipe/recipe-9.jpeg",
-        "./assets/images/recipe/recipe-10.jpeg",
-        "./assets/images/recipe/recipe-11.jpeg",
-        "./assets/images/recipe/recipe-12.jpg",
+        "./images/recipe/recipe-1.jpg",
+        "./images/recipe/recipe-2.jpg",
+        "./images/recipe/recipe-3.jpg",
+        "./images/recipe/recipe-4.jpg",
+        "./images/recipe/recipe-5.jpg",
+        "./images/recipe/recipe-6.jpeg",
+        "./images/recipe/recipe-7.jpeg",
+        "./images/recipe/recipe-8.jpeg",
+        "./images/recipe/recipe-9.jpeg",
+        "./images/recipe/recipe-10.jpeg",
+        "./images/recipe/recipe-11.jpeg",
+        "./images/recipe/recipe-12.jpg",
     ];
 
     // Variable to hold the current recipe data
