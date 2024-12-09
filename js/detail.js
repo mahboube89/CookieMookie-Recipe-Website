@@ -159,7 +159,7 @@ export function init() {
                         </div>
                     </div>
 
-                    <div class="recipe-stats-item">
+                    <div class="recipe-stats-item recipe-stats-item-ingr">
                         <p class="stats-value" >${recipe.ingredients.length}</p>
                         <span class="subtitle">Ingredients</span>
                     </div>
@@ -299,3 +299,8 @@ export function init() {
     window.addEventListener("hashchange", showOneRecipe);
     
 }
+
+// Ensure the function is called when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+    init();
+});
